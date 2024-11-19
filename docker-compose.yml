@@ -1,0 +1,27 @@
+#version: '3.8'
+
+services:
+  drupal:
+    build: .
+    ports:
+      - "8089:80"
+#    volumes:
+#      - ./drupal:/var/www/html
+    environment:
+      - DRUPAL_DB_HOST=db
+      - DRUPAL_DB_USER=root
+      - DRUPAL_DB_PASSWORD=root
+      - DRUPAL_DB_NAME=drupal
+#    depends_on:
+#      - db
+
+#  db:
+#    image: mysql:8.0
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_DATABASE: drupal
+#    volumes:
+#      - db_data:/var/lib/mysql
+
+#volumes:
+#  db_data:

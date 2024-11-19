@@ -1,0 +1,11 @@
+# Ignore settings.php (local configurations)
+sites/default/settings.php
+
+# Ignore Drupal's files directory
+sites/default/files
+
+# Ignore private directories
+sites/default/private
+
+# Ignore local settings or configuration files
+sites/default/settings.local.php
